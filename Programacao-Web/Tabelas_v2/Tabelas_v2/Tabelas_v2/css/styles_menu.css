@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* MENU*/
+
+main{
+    display: flex;
+    align-items: center;
+    background-image: url("../img/fundo-p.jpg");
+    background-position:center ;
+    height: 75vh;
+}
+
+/* Imagem */
+
+.img-f{
+    margin: 10px;
+    width: 340px;
+    height: 340px;
+    padding: 4px;
+    background-color: rgba(26, 115, 150, 0.753);
+    border-radius: 12px;
+}
+
+.img-f:hover{
+    animation: imagee 2s forwards;
+}
+
+/* descrição */
+
+.p-descricao{
+    color: #1b1b1b;
+    padding: 10px;
+    width: 380px;
+    height: 100px;
+    font-size: 15px;
+}
+
+.d-descricao{
+    width: 310px;
+    text-align: center;
+    color: #1b1b1b;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* tabela */
+
+.tabela{
+    border: 2px solid #042a9b6c;
+}
+
+thead{
+background-color: #0b5a5662;
+}
+
+tbody{
+background-color: #00434e59;
+}
+
+.tex3{
+    color: #1b1b1b;
+    padding: 5px;
+    text-align: center;
+}
+
+.tex4{
+    color: #016d01;
+    padding: 5px;
+    text-align: center;
+}
+
+
+@keyframes imagee{
+    0% {
+        transform: scale(1);
+        background-color: rgba(26, 115, 150, 0.753);
+    }
+    100%{
+        transform: scale(1.1);
+        background-color: rgba(26, 115, 150, 0);
+    }
+}
+
+/* Container Formulario */
+
+.container-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    padding: 15px;
+    margin: 10px;
+}
+
+.text-form{
+    padding: 10px;
+}
+
+label{
+    margin: 10px;
+}
+
+input{
+    border-radius: 10px;
+    padding: 8px;
+    border: 2px solid #1b1b1b;
+    background-color: #b5f1e785;
+}

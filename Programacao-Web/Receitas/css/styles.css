@@ -1,0 +1,301 @@
+
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilizações */
+
+body {
+    font-family: sans-serif;
+    background-color: #eee;
+}
+
+/* Cabeçalho */
+
+header {
+    animation: fundo 5s alternate infinite ease-in-out;
+    color: #eee;
+    padding: 10px;
+    border-bottom: 2px solid #FF4500;
+    
+}
+
+.container-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#titulo-principal {
+    text-align:center;
+    padding: 10px;
+
+}
+
+#links-navegadores{
+    text-decoration: none;
+    color: #eee;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+#logo{
+    margin: 1px;
+    height: 80px;
+    width: 80px;
+    border-radius: 15px;
+    align-items: start;
+    animation: puff-in-center 0.9s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+/* menu*/
+
+ul, ol {
+    padding: 22px;
+}
+
+li {
+    padding: 10px;
+}
+
+.titulos {
+    text-align: center;
+    padding: 10px;
+    color: #FF4500;
+}
+
+.sub-titulos {
+    padding: 10px;
+    color: #ff5537;
+}
+
+.sub-titulos-2 {
+    padding: 10px;
+    color: #ff7b4b;
+}
+
+.return {
+    text-decoration: none;
+    margin: 10px;
+    color: #eee;
+    padding: 10px;
+    display: block;
+    width: 6%;
+    border-radius: 15px;
+    background-color: #fd6d38;
+}
+
+.return:hover {
+    background-color: #ff4e0d;
+    animation: btn-efeito 0.4s alternate forwards ease-in-out;
+}
+
+/* CARDS */
+
+.container {
+    background-color: #eee;
+    min-height: 60vh;
+    padding: 50px;
+}
+  
+.products-container {
+    max-width: 350px;
+    margin: 0 auto;
+}
+  
+.card {
+    text-align: center;
+    width: 100%;
+    margin: 1% 1%;
+    display: inline-block;
+    padding: 15px;
+    color: #333;
+}
+
+.imagem-receita {
+    height: 300px;
+    width: 300px;
+    border: 2px solid #ff6229;
+    border-radius: 20px;
+}
+
+.btn {
+    margin: 0px 10% 0px 5%;
+    display: block;
+    width: 90%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #ff6229;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+  
+.btn:hover {
+    background-color: #FF4500;
+    animation: btn-efeito 0.9s alternate forwards ease-in-out;
+    
+}
+
+
+/* Formulario */
+
+#ad {
+    color: #fd6d38;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#bt {
+    color: #eee;
+    background-color: #ff4e0d;
+    border: 1px solid #FF4500;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display:inline-block;
+    align-items: center;
+}
+
+/* Rodapé */
+
+footer{
+    background-color: #dfdfdf;
+    color: #181818;
+    padding: 10px;
+}
+  
+/* animações */
+
+@keyframes fundo {
+
+    from{
+        background-color: #ff5537;
+    }
+    to {
+        background-color: #fd6d38;
+    }
+}
+
+@keyframes puff-in-center {
+    0% {
+      transform: scale(2);
+      filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      filter: blur(0px);
+      opacity: 1;
+    }
+}
+
+@keyframes btn-efeito {
+    from {
+        background-color: #ff6229;
+        transform: scale(1);
+    }
+    to {
+        background-color: #FF4500;
+        transform: scale(1.10);
+    }
+}
+  
+/*footer sempre abaixo*/
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 1 0;
+}
+
+
+/*responsividade*/
+@media(max-width:400px){
+    
+
+    /* Cabeçalho */
+    header{
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+        z-index: 1;
+        left: 0;
+    }
+    #titulo-principal{
+        font-size: 20px;
+    }
+    #logo {
+        height: 50px;
+        width: 50px;
+
+    }
+
+    main{
+        height: 100%;
+    }
+
+    #links-navegadores{
+        padding: 10px;
+    } 
+
+    /* cards */
+
+    .container {
+        padding: 0px;
+    }
+
+
+    .products-container{
+        max-width: 250px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card{
+        height: auto;
+        width: auto;
+    }
+
+    .card h2 {
+        text-align: center;
+    }
+
+    .imagem-receita {
+        height: 250px;
+        width: 250px;
+        
+    }
+
+    .btn {
+        width: 250px;
+        margin: 0px;
+    }
+
+    /*Formularios link*/
+    #ad {
+        font-size: 1em;
+    }
+    #bt {
+        font-size:1em;
+        text-align: center;
+    }
+    
+    /*footer*/
+    footer p{
+        font-size: 1em;
+    }
+
+
+}
