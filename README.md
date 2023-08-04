@@ -3,7 +3,7 @@ um repositório para guardar todos os projetos feitos na etec em 2023, ou seja, 
 dentre essas técnologias estão: 
 
 - Logica de programação e Java
-- Modelagem de Banco de Dados
-- HTML e CSS basicos
-- Design Digital
+- Modelagem de Banco de Dados e SQL com o SGBD SQLSERVER
+- HTML,CSS e JavaScript
+- Design Digital 
 - Analise e projeto de sistemas
