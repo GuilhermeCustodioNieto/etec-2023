@@ -163,6 +163,23 @@ li {
     align-items: center;
 }
 
+#forms{
+    
+    border-radius: 46px;
+    padding: 30px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  35px 35px 70px #a8a8a8,
+                -35px -35px 70px #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#forms *{
+    margin: 10px 0px;
+    padding: 5px;
+}
+
 /* Rodapé */
 
 footer{
@@ -297,5 +314,93 @@ main {
         font-size: 1em;
     }
 
+
+}
+
+/*800px*/
+
+@media(min-width:401px) and (max-width:800px){
+    
+
+    /* Cabeçalho */
+    header{
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+        z-index: 1;
+        left: 0;
+    }
+    #titulo-principal{
+        font-size: 40px;
+    }
+    #logo {
+        height: 100px;
+        width: 100px;
+
+    }
+
+    #links-navegadores{
+        padding: 10px;
+        font-size: 20px;
+    } 
+
+    /* cards */
+
+    .container {
+        padding: 0px;
+    }
+
+
+    .products-container{
+        max-width: 500px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card{
+        height: auto;
+        width: auto;
+    }
+
+    .card h2 {
+        text-align: center;
+        
+    }
+
+    .imagem-receita {
+        height: 400px;
+        width: 400px;
+        
+    }
+
+    .btn {
+        width: 400px;
+        margin: 0px;
+    }
+
+    /*Formularios link*/
+    #ad {
+        font-size: 20px;
+    }
+    #bt {
+        font-size:20px;
+        text-align: center;
+    }
+    
+    /*footer*/
+    footer p{
+        font-size: 20px;
+    }
+
+    /*menu*/
+    .titulos{
+        font-size: 40px;
+    }
+
+    .sub-titulos, .titulos{
+        font-size: 25px;
+    }
 
 }
