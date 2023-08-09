@@ -168,13 +168,39 @@ li {
     border-radius: 46px;
     padding: 30px;
     background: linear-gradient(145deg, #cacaca, #f0f0f0);
-    box-shadow:  35px 35px 70px #a8a8a8,
+    box-shadow:  35px 35px 70px #e4e4e4,
                 -35px -35px 70px #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
 }
 
+#forms {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+.sub-forms{
+        
+        margin: 0px;
+        width: 90%;
+    }
+
+    .sub-forms *{
+        width: 500px;
+        
+    }
+
+    
+
+
+
+
+#formulario input, #forms textarea{
+    
+    max-width: 500px;
+    width: 500px
+}
 #forms *{
     margin: 10px 0px;
     padding: 5px;
@@ -187,7 +213,12 @@ footer{
     color: #181818;
     padding: 10px;
 }
-  
+
+/*return*/
+    .return {
+        width:5em;
+    }
+
 /* animações */
 
 @keyframes fundo {
@@ -319,8 +350,11 @@ main {
 
 /*800px*/
 
-@media(min-width:401px) and (max-width:800px){
-    
+@media(min-width:401px) and (max-width:650px){
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
 
     /* Cabeçalho */
     header{
@@ -388,7 +422,32 @@ main {
         font-size:20px;
         text-align: center;
     }
+
+    /*formularios*/
+    #forms {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
     
+    .sub-forms{
+        
+        margin: 0px;
+        width: 90%;
+    }
+
+    .sub-forms *{
+        width: 300px;
+        
+    }
+
+    .sub-forms p{
+        margin: 0px;
+    }
+
     /*footer*/
     footer p{
         font-size: 20px;
@@ -402,5 +461,9 @@ main {
     .sub-titulos, .titulos{
         font-size: 25px;
     }
+
+    .modo-preparo li, .ingredientes li{
+        font-size: 20px;
+    }    
 
 }
