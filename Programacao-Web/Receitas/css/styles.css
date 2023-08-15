@@ -30,7 +30,7 @@ header {
 .container-principal {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #titulo-principal {
@@ -64,6 +64,7 @@ ul, ol {
 
 li {
     padding: 10px;
+    font-size: 0.8em;
 }
 
 .titulos {
@@ -75,6 +76,7 @@ li {
 .sub-titulos {
     padding: 10px;
     color: #ff5537;
+    font-size: 1em;
 }
 
 .sub-titulos-2 {
@@ -245,6 +247,8 @@ li {
     border-radius: 10px;
 }
 
+
+
 .form-header h1::after{
     content: '';
     display: block;
@@ -268,6 +272,10 @@ li {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
+}
+
+.input-box label{
+    text-align: center;
 }
 
 .input-box input {
@@ -347,9 +355,13 @@ main {
 }
 
 
+
 /*responsividade*/
 @media(max-width:400px){
-    
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
 
     /* Cabeçalho */
     header{
@@ -359,7 +371,7 @@ main {
         z-index: 1;
         left: 0;
     }
-    #titulo-principal{
+    .titulo-principal{
         font-size: 20px;
     }
     #logo {
@@ -368,30 +380,33 @@ main {
 
     }
 
-    main{
-        height: 100%;
-    }
+    
 
     #links-navegadores{
         padding: 10px;
+        font-size: 10px;
     } 
 
     /* cards */
 
     .container {
         padding: 0px;
+        
     }
 
 
     .products-container{
-        max-width: 250px;
         
+        margin: 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
     .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         height: auto;
         width: auto;
     }
@@ -401,13 +416,14 @@ main {
     }
 
     .imagem-receita {
-        height: 250px;
-        width: 250px;
+        margin: 10px 0px;
+        height: 10em;
+        width: 10em;
         
     }
 
     .btn {
-        width: 250px;
+        width: 10em;
         margin: 0px;
     }
 
@@ -422,10 +438,12 @@ main {
     
     /*footer*/
     footer p{
-        font-size: 1em;
+        font-size: 15px;
     }
 
-
+    .titulos{
+        font-size: 20px;;
+    }
 }
 
 /*800px*/
@@ -474,6 +492,9 @@ main {
     }
 
     .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         height: auto;
         width: auto;
     }
@@ -484,13 +505,14 @@ main {
     }
 
     .imagem-receita {
-        height: 400px;
-        width: 400px;
+        margin: 10px 0px;
+        height: 300px;
+        width: 300px;
         
     }
 
     .btn {
-        width: 400px;
+        width: 300px;
         margin: 0px;
     }
 
