@@ -3,6 +3,8 @@ public class ex001 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Digite o ano de nascimento do aluno");
 		int idadeAluno = scan.nextInt();
 		
 		switch (idadeAluno){
