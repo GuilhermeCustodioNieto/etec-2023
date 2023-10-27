@@ -1,0 +1,118 @@
+#contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 160px;
+    height: 180px;
+    background-color: #222;
+    border-radius: 20px;
+    margin: 10px;
+    color: #eee;
+    transition: .8s;
+}
+
+.rede_texto{
+    opacity: 0;
+    color: #eee;
+    padding: 10px;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.redes:hover .rede_texto{
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+.redes:hover{
+    color:  #6570b8;
+    text-shadow: 0 0 15px #4e5aa0;
+    background: rgb(101, 112, 184); 
+    background: linear-gradient(225deg, rgba(101, 112, 184, 0.9) 1%, rgba(36,36,36,0.9491968662464986) 24%, rgba(25,25,25,1) 100%);
+}
+
+.rede_social{
+    text-decoration: none;
+}
+
+.contato_titulo{
+    padding: 15px;
+    text-align: center;
+    font-size: 45px;
+    color:  #333;
+    text-shadow: 0 0 5px #999;
+}
+
+
+@media (max-width: 700px) {
+
+    #contato{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .redes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 150px;
+        height: 170px;
+        background-color: #222;
+        border-radius: 20px;
+        margin: 10px;
+        color: #eee;
+        transition: .8s;
+    }
+    
+    .contato_titulo{
+        padding: 15px;
+        text-align: center;
+        font-size: 40px;
+        color:  #333;
+        text-shadow: 0 0 5px #999;
+    }
+}
+  
+@media (max-width: 450px){
+    #contato{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .redes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 120px;
+        height: 140px;
+        background-color: #222;
+        border-radius: 20px;
+        margin: 10px;
+        color: #eee;
+        transition: .8s;
+    }
+    
+    .contato_titulo{
+        padding: 15px;
+        text-align: center;
+        font-size: 35px;
+        color:  #333;
+        text-shadow: 0 0 5px #999;
+    }
+}

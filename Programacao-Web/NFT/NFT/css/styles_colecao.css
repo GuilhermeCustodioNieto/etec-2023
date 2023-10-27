@@ -1,0 +1,65 @@
+#nft-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.colecao-card{
+    transition: .8s;
+    background-color: #dddddd;
+    margin: auto;
+    width: 98%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px #888;
+    margin: 15px 0;
+}
+
+.colecao-card:hover{
+    box-shadow: 0 0 12px #111;
+    transform: scale(1.02);
+}
+
+.colecao-card:hover > .colecao-nome{
+    text-shadow: 0 0 5px #222;
+    letter-spacing: 1.5px;
+}
+
+.colecao-nome{
+    text-align: center;
+    color: #111;
+    text-shadow: 0 0 5px #444;
+    letter-spacing: 0.5px;
+    transition: .5s;
+}
+
+.colecao-descricao{
+    color: #111;
+    letter-spacing: 0.5px;
+}
+
+.img-nft{
+    width: 280px;
+    height: 280px;
+    margin: 10px 20px 25px 20px;
+    box-shadow: 0 2px 15px #222;
+    transition: .5s;
+}
+
+.img-nft:hover{
+    box-shadow: 0 4px 10px #111;
+    transform: scale(1.2);
+}
+
+.valor-cripto{
+    color: #111;
+    letter-spacing: 0.5px;
+    padding: 5px;
+    font-size: 16px !important;
+    transition: .5s;
+}

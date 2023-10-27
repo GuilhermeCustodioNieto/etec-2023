@@ -1,0 +1,73 @@
+#quem_sou{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.foto_dev{
+    border-radius: 30% 50%;
+    box-shadow: 0 0 5px #333;
+    filter: blur(5px);
+    height: 350px;
+    width: 350px;
+    transition: .5s;
+    margin: 15px;
+}
+
+.foto_dev:hover{
+    border-radius: 50%;
+    box-shadow: 0 0 8px #333;
+    filter: blur(0);
+}
+
+.card_texto{
+    padding: 10px;
+}
+
+.nome_qm{
+    font-size: 24px;
+    text-shadow: 0 0 1px #939be7;
+}
+
+.lista_qm{
+    margin: 2px 0px;
+    padding: 10px 0;
+    list-style: none;
+    color: #111;
+    text-shadow:  0 0 0.5px #111;
+    font-size: 20px;
+}
+
+@media (max-width: 450px){
+    #quem_sou{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .foto_dev{
+        border-radius: 30% 50%;
+        box-shadow: 0 0 5px #333;
+        filter: blur(5px);
+        height: 250px;
+        width: 250px;
+        transition: .5s;
+        margin: 5px;
+    }
+    
+    .nome_qm{
+        font-size: 20px;
+        text-shadow: 0 0 1px #939be7;
+    }
+    
+    .lista_qm{
+        margin: 2px 0px;
+        padding: 10px 0;
+        list-style: none;
+        color: #111;
+        text-shadow:  0 0 0.5px #111;
+        font-size: 16px;
+    }
+}

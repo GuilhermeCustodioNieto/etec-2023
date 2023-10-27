@@ -1,0 +1,42 @@
+/* contato */
+
+#contato-secao{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contato{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
+.contato-lista{
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
+}
+
+.contato-link{
+    padding: 10px;
+}
+
+.icon{
+    color: #ede;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.icon:hover{
+    color: #eee;
+    text-shadow: 0 0 10px #dfbb17;
+}
+
+.contato-nome{
+    color: #ede;
+    font-size: 20px;
+}

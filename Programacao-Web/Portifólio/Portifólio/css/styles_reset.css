@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+*::selection{
+    background-color: #c0c4fd;
+    color: #000;
+}
+
+body{
+    background-color: #d1dde4;
+}
+
+/* font-family: 'Playfair Display', serif;
+
+font-family: 'Croissant One'; 
+
+#d1dde4 */

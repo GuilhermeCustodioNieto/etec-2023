@@ -1,0 +1,142 @@
+#projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 15px;
+}
+
+.projeto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+    width: 280px;
+    box-shadow: 0 0 15px 2px #d3d3d3;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.nome_projeto{
+    color: #111;
+    text-shadow: 0 0 2px #333;
+}
+
+.descricao_projeto{
+    color: #222;
+    text-shadow: 0 0 1px #333;
+    padding: 0px 20px;
+}
+
+.link_projeto{
+    text-decoration: none;
+    color: #111;
+    padding: 8px;
+    box-shadow: 0 0 3px #333;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.projeto:hover .link_projeto{
+    background-color: #333;
+    color: #eee;
+    padding: 10px;
+}
+
+.projeto:hover{
+    box-shadow: 0px 0px 10px 1px #333;
+}
+
+.projeto:hover .seta{
+    animation: animacao 2s infinite;
+}
+
+@media (max-width: 700px) {
+    #projetos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 450px){
+    #projetos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+    }
+    
+    .projeto{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        height: 310px;
+        width: 260px;
+        box-shadow: 0 0 10px 2px #d3d3d3;
+        margin: 12px;
+        padding: 10px;
+        border-radius: 15px;
+        transition: .5s;
+    }
+    
+    .nome_projeto{
+        color: #111;
+        text-shadow: 0 0 2px #333;
+    }
+    
+    .descricao_projeto{
+        color: #222;
+        text-shadow: 0 0 1px #333;
+        padding: 0px 15px;
+    }
+    
+    .link_projeto{
+        text-decoration: none;
+        color: #111;
+        padding: 8px;
+        box-shadow: 0 0 3px #333;
+        border-radius: 10px;
+        transition: .5s;
+    }
+    
+    .projeto:hover .link_projeto{
+        background-color: #333;
+        color: #eee;
+        padding: 10px;
+    }
+    
+    .projeto:hover{
+        box-shadow: 0px 0px 10px 1px #333;
+    }
+    
+    .projeto:hover .seta{
+        animation: animacao 2s infinite;
+    }
+    
+
+}
+
+
+/* animações */ 
+
+@keyframes animacao {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(10px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
