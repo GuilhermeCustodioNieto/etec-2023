@@ -16,7 +16,6 @@ public class Ex010 {
       vetorB[i] = vetorA[i];
     }
 
-    int contadorSuperLista = 0;
     for (int j = 0; j <= 9; j++) {
       int menor = vetorB[j];
       int indiceMenor = j;

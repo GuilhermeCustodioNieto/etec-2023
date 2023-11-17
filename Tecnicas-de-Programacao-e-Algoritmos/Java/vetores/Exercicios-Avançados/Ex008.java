@@ -30,3 +30,5 @@ public class Ex008 {
 	}
 
 }
+/*Ler 10 elementos inteiros em um vetor A. Montar uma *rotina de busca, para 
+*pesquisar se um dado elemento X está armazenado em A.*/

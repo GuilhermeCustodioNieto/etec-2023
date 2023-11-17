@@ -4,22 +4,21 @@ public class Ex004 {
 
   public static void main(String[] args) {
 
-    int[] vetorA = new int[11];
+    double[] vetorA = new double[11];
 
-    int resultPotencia = 0;
+    double resultPotencia = 2;
 
     for (int i = 0; i <= (vetorA.length - 1); i++) {
-
-      for (int c = 1; c <= i; c++) {
-        resultPotencia = resultPotencia * 2;
+      if(i==0){
+        resultPotencia = Math.pow(resultPotencia, 2);
+      } else{
+        resultPotencia = Math.pow(resultPotencia,vetorA[i-1]);
       }
-
+      
       vetorA[i] = resultPotencia;
-
-      resultPotencia = 1;
     }
 
-    for (int atual : vetorA) {
+    for (double atual : vetorA) {
       System.out.println(atual);
     }
   }

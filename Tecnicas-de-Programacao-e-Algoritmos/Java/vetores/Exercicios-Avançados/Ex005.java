@@ -1,17 +1,19 @@
 package com.core;
 
-import java.util.Scanner;
+import java.util.Random;
 
 public class Ex005 {
 
   public static void main(String[] args) {
-    Scanner scan = new Scanner(System.in);
+    
 
     int[] vetorA = new int[5];
     int[] vetorB = new int[5];
     
+    Random random = new Random();
+    
     for(int i=0; i<=(vetorA.length - 1); i++){
-      vetorA[i] = scan.nextInt();
+      vetorA[i] = random.nextInt() % 50;
     }
     
     for(int i=0; i<=(vetorA.length - 1); i++){
@@ -29,6 +31,8 @@ public class Ex005 {
       vetorB[i] = result;
       System.out.printf(" = %d%n", result);
     }
+    
+    
   }
 }
 /*

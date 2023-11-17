@@ -31,6 +31,12 @@ public class Ex007ArrayList {
       }
     }
     
+    for(Integer valor : vetorB){
+      if(vetorA.contains(valor) == false && vetorC.contains(valor) == false){
+        vetorC.add(valor);
+      }
+    }
+    
     System.out.println("Os valores que tem intersecção são: ");
     int syzeVectC = (vetorC.size() - 1);
     for(Integer valor : vetorC){

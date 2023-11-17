@@ -26,12 +26,18 @@ public class Ex001 {
       }
     }
     
-    System.out.println("valores de B: ");
+    System.out.println("valores de B (impares): ");
     
-    for (int atual : vetorB) {
-      System.out.println(atual);
+    for (int i=indexImpares; i<=19; i++) {
+      System.out.print(vetorB[i] + " ");
     }
-
+    System.out.println("\n");
+    System.out.println("valores de B (pares): ");
+    
+    for (int i=0; i<=indexPares - 1; i++) {
+      System.out.print(vetorB[i] + " ");
+    }
+    System.out.println("\n");
     System.out.println("FIM DO PROGRAMA");
 
     scan.close();
