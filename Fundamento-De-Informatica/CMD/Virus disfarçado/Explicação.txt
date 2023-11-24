@@ -1,0 +1,1 @@
+Esse é um .bat que abre a mesma tela do notepad 200 vezes, o .bat está oculto na pasta, mas tem um atalho chamado "python" com o ícone do python

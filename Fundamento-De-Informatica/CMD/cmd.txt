@@ -1,0 +1,109 @@
+prompt de comandos:
+
+é uma interface dde comandos que suportra comandos que enviarmos
+recebe comandos e traduz para algo que a maquina entende e retorna algo que os humanos entendem.
+
+Aparelhos android não tem suporte nativo ao prompt de comandos.
+---------------------------------------------------------------------------
+MS-DOS: primeiro sistema operacional da microsoft (MS- Microsoft) em disco
+
+Antes de ser da microsoft, era da seattle software, mas a microsoft comprou.
+
+1981 --- A IBM só tinha hardware, mas a microsoft tinha uma técnologia de duas decadas a frente
+A microsoft nãnha o SO e comprou da Software por 50k.
+
+windows 95 criado em 1995. Rodava por cima do MS-DOS. Isso durou até 1999,qunado a microsoft comprou o unix.
+O MS-DOS é muito bom para a manipulação de arquivos, que existe até hoje.
+
+O DOS É O CMD
+--------------------------------------------------------------------------
+Abrir cmd:
+
+	Win + R
+	Digitar CMD
+
+parar comandos rodando:
+	CTRL + C
+
+para completar os comandos automaticamente:
+	TAB
+
+----------------------------------------------------------------------------------
+help: mostra os comandos e uma ajuda
+
+dir: Mostra s diretorios e arquivos da pasta inicial
+
+cd: abre uma pasta ou arquivo
+	para voltar para trás em uma pasta é 
+		'''
+		cd ..
+		'''
+
+	para ir para a raiz do computador: 
+		'''
+		cd /
+		'''
+
+tree: mostra todas as arvores de arquivos do diretório atual.
+	para mostrar aos poucos:
+		'''
+		tree | more
+		'''
+
+color: muda as cores do cmd
+	para ver todas as opções de cores:
+		'''
+		color /?
+		'''
+	para deixar verde (hacker):
+		'''
+		color 2
+		'''
+
+mkdir: cria uma pasta no diretório atual.
+
+rmdir: remove a pasta especifica no diretório atual
+
+shutdown /S /F /T 120: desliga o PC em 120s
+	/S: desligar
+	/F: forçar o desligamento
+	/T: tempo
+
+shutdown /A: Cancela o desligamento do computador
+
+start: inicia o cmd
+
+start notepad: inicia o programa escrito
+
+FOR /L %A in (1,1,10)do mkdir pasta%A: Esse código faz um laço for na pasta atual, criando 200 pastas.
+	o %A é o nome da variável (seria equivalente ao i na programação).
+	após o do, é tudo que vai acontecer no escopo do for.
+	criamos pastas com o mkdir chamadas pasta+i
+
+FOR /L %A in (1,1,200)do rmdir pasta%A: remove as 200 pastas
+
+
+--------------------------------------------------------------------
+.BAT
+
+executa comandos de terminal
+
+Idéia:
+
+crie um virus que abra o mesmo programa N vezes
+mude o icone para algo "confiavel"
+mude o nome 
+mande pro Nathan
+-------------------
+virus no .bat:
+
+abra o notepad
+coloque isso
+
+FOR /L %%A in (1,1,200)do mkdir pasta%%A
+	nota: precisa dos dois %% para usar a variavel
+
+e salve como 
+
+virus.bat
+
